@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+    <div class="col-md-2 col-md-offset-5">
+        <form action="/Login/Authorization" method="post">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">User ID</span>
+                </div>
+                <input id="txtuserid" name="txtuserid" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Password</span>
+                </div>
+                <input id="txtpassword" name="txtpassword" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+
+
+            <input class="btn btn-danger" type="submit" value="Login" />
+
+        </form>
+    </div>
+</div>
